@@ -28,7 +28,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
-    projects: 'src/SecondAPI/SecondAPI.csproj'
+    projects: 'src/LabAPI/LabAPI.csproj'
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPubish: true
 
