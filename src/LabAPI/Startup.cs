@@ -41,7 +41,7 @@ namespace LabAPI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection(); //comment:
             app.UseMvc();
         }
     }
