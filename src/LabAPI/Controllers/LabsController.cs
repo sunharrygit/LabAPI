@@ -25,7 +25,7 @@ namespace LabAPI.Controllers
         }
 
         // GET api/Labs/5
-        [HttpGet("{id}")]
+        [HttpGet("{value}")]
         public ActionResult<string> Get(string value)
         {
             string s = value.ToString();
