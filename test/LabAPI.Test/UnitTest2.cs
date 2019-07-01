@@ -12,8 +12,15 @@ namespace LabAPI.Test
         public void GetReturnsMyName()
         {
          var returnValue = controller.Get(1);
-            Assert.Equal("It is my controller", returnValue.Value);
-    
+            Assert.Equal("It is my controller", returnValue.Value);    
+        }
+
+        [Fact]
+        public void GetReturnsHello()
+        {
+            string s = "Harry";
+         var returnValue = controller.Get(s);
+            Assert.Equal("Hello "+s+", welcome to Harry's Lab!", returnValue.Value);  
         }
 
         [Fact]

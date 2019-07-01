@@ -14,29 +14,37 @@ namespace LabAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Hello", "World" };
+            return new string[] { "Hello", "Super JYY" };
         }
 
-        // GET api/values/5
+        // GET api/Labs/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
             return "It is my controller";
         }
 
-        // POST api/values
+        // GET api/Labs/5
+        [HttpGet("{id}")]
+        public ActionResult<string> Get(string value)
+        {
+            string s = value.ToString();
+            return "Hello "+s+", welcome to Harry's Lab!";
+        }
+
+        // POST api/Labs
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/Labs/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/Labs/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
